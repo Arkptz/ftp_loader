@@ -20,7 +20,7 @@ async def launch(full_path):
             content_type="application/octet-stream",
         )
 
-    url = "https://cdn.vitrinagram.ru/api/ftp/files/load_file"
+    url = f"{SETTINGS.cdn_url}/api/ftp/files/load_file"
     async with aiohttp.ClientSession() as session:
         async with session.post(url, data=data) as resp:
             print(await resp.json())
