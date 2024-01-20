@@ -30,7 +30,7 @@ async def launch():
                     print(await resp.json())
 
 
-async def main():
+def main():
     await launch()
 
 
