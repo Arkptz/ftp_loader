@@ -31,7 +31,7 @@ async def launch():
 
 
 def main():
-    await launch()
+    asyncio.run(launch())
 
 
 if __name__ == "__main__":
